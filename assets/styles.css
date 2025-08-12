@@ -74,3 +74,30 @@ details { margin: 8px 0; }
   #nav.open { display: block; position: absolute; right: 8px; top: 56px; background: #fff; border: 1px solid var(--border); padding: 8px 12px; border-radius: 8px; }
   #nav.open a { display: block; margin: 8px 0; }
 }
+
+
+
+/* Layout tweaks */
+.container { max-width: 1100px; }               /* a bit wider */
+.hero {
+  grid-template-columns: 340px 1fr;             /* bigger photo column */
+  gap: 56px;                                    /* more space between photo & bio */
+  align-items: start;
+  min-height: 68vh;                             /* taller hero section */
+}
+.hero-media { justify-self: start; }            /* keep photo hard-left */
+.hero-text { max-width: 700px; }                /* readable line length */
+
+/* Icon row */
+.social-icons {
+  display: flex; align-items: center; gap: 12px; margin-top: 8px;
+}
+.social-icons .icon {
+  width: 38px; height: 38px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid var(--border);
+  text-decoration: none; color: var(--text);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.social-icons .icon:hover { transform: translateY(-1px); box-shadow: var(--shadow); border-color: var(--accent); }
+.social-icons img, .social-icons svg { width: 20px; height: 20px; display: block; }
