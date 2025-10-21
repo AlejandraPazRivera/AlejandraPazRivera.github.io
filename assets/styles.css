@@ -101,3 +101,12 @@ details { margin: 8px 0; }
 }
 .social-icons .icon:hover { transform: translateY(-1px); box-shadow: var(--shadow); border-color: var(--accent); }
 .social-icons img, .social-icons svg { width: 20px; height: 20px; display: block; }
+
+
+/* Más aire en texto y secciones */
+.hero-text p { margin: 14px 0; }
+p { margin: 12px 0 14px; }
+section { margin: 56px 0; }
+.hero { gap: 64px; min-height: 72vh; }
+.hero-text { max-width: 720px; }
+
