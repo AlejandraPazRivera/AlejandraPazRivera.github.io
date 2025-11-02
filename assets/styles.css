@@ -110,3 +110,21 @@ section { margin: 56px 0; }
 .hero { gap: 64px; min-height: 72vh; }
 .hero-text { max-width: 720px; }
 
+/* Más espacio respecto a la bio */
+.hero-text .social-icons { margin-top: 32px; }
+
+/* Estilos del contenedor e iconos */
+.social-icons {
+  display: flex; align-items: center; gap: 14px;
+  position: relative; z-index: 2;  /* por si algún overlay tapa */
+}
+.social-icons .icon {
+  width: 40px; height: 40px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid var(--border);
+  text-decoration: none; color: var(--text);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  pointer-events: auto; cursor: pointer;
+}
+.social-icons .icon:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); }
+.social-icons svg { width: 20px; height: 20px; display: block; }
