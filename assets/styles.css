@@ -161,3 +161,44 @@ section { margin: 56px 0; }
 
 .hero-media img { border-radius: 18px; box-shadow: var(--shadow); }
 
+/* --- Más espacio en el home (hero) --- */
+.container { padding-top: 48px; }
+
+.hero {
+  grid-template-columns: 380px 1fr;  /* foto más ancha, texto más suelto */
+  column-gap: 88px;                  /* más espacio entre foto y bio */
+  row-gap: 20px;
+  min-height: 78vh;
+}
+
+.hero-media img { max-width: 360px; } /* limita el ancho de la foto para que no empuje el texto */
+
+.hero-text h1 { margin: 10px 0 14px; }
+.hero-text p { margin: 14px 0 18px; }
+
+.hero-text .cta { margin-top: 18px; margin-bottom: 12px; }
+.button { margin-right: 12px; }
+
+/* --- Iconos sociales con más aire y tamaño --- */
+.hero-text .social-icons { margin-top: 40px; }  /* más espacio desde los botones */
+.social-icons { display: flex; gap: 20px; }
+
+.social-icons .icon {
+  width: 46px; height: 46px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid var(--border);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.social-icons .icon:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); }
+.social-icons svg, .social-icons img { width: 24px; height: 24px; }
+
+/* --- Responsive: en móvil reducimos un poco los gaps --- */
+@media (max-width: 860px) {
+  .hero { column-gap: 28px; min-height: auto; }
+  .hero-text .social-icons { margin-top: 24px; }
+  .social-icons { gap: 14px; }
+  .social-icons .icon { width: 42px; height: 42px; }
+  .social-icons svg, .social-icons img { width: 22px; height: 22px; }
+}
+
+
