@@ -128,3 +128,36 @@ section { margin: 56px 0; }
 }
 .social-icons .icon:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); }
 .social-icons svg { width: 20px; height: 20px; display: block; }
+
+
+/* Más aire general en el hero */
+.hero {
+  gap: 72px;              /* espacio entre foto y texto */
+  min-height: 74vh;       /* sección más alta */
+}
+.hero-text p { margin: 14px 0; }
+
+/* Más espacio entre el párrafo y los botones */
+.hero-text .cta { margin-top: 16px; }
+.button { margin-right: 10px; margin-bottom: 10px; }
+
+/* Fila de iconos: más grande y con aire */
+.hero-text .social-icons { margin-top: 32px; }
+.social-icons {
+  display: flex; align-items: center; gap: 16px;
+}
+.social-icons .icon {
+  width: 44px; height: 44px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid var(--border);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.social-icons .icon:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); }
+.social-icons svg, .social-icons img { width: 22px; height: 22px; display: block; }
+
+/* Un poco más de amarillo en la cabecera del hero */
+.hero-text { border-left: 5px solid var(--accent); padding-left: 22px; }
+
+
+.hero-media img { border-radius: 18px; box-shadow: var(--shadow); }
+
